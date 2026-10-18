@@ -1,0 +1,13 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1792341215
+bloques.gd::GDScript::599474971560865984::1791838152::0::1::::<>Node2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::4884271429256909027::1791838152::1792341219::1::::<><><>0<>0<>1320a3adeb993c0d23d9e2d16b78da7d<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+jugador.gd::GDScript::6802899661295770942::1791838152::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.tscn::PackedScene::-1::1791838152::0::1::::<><><>0<>0<><>::res://jugador.gd<>res://assets/bill_hoja.png
+LEEME.txt::TextFile::-1::1791838152::0::1::::<><><>0<>0<><>::
+mundo.gd::GDScript::6069136238030731377::1791838152::0::1::::<>Node2D<><>0<>0<><>::
+mundo.tscn::PackedScene::-1::1791838152::0::1::::<><><>0<>0<><>::res://mundo.gd<>res://jugador.tscn
+::res://assets/::1792341114
+bill_hoja.png::CompressedTexture2D::342691205775279993::1791838152::1792341219::1::::<><><>0<>0<>e73052f9d2c269968e6c3982e87e86de<>res://.godot/imported/bill_hoja.png-cd20af58397aa4ebf4e43a7d7e3c0e30.ctex::
+disparo.wav::AudioStreamWAV::397964771464057015::1791838152::1792341219::1::::<><><>0<>0<>59a8badc61341ee090c5bacccf5eafd6<>res://.godot/imported/disparo.wav-2b692ede530592041ae23c19e4690a84.sample::
+muerte.wav::AudioStreamWAV::850072720174711237::1791838152::1792341219::1::::<><><>0<>0<>0160ad2cbe9813863d23d0b90169df99<>res://.godot/imported/muerte.wav-c2c2e9ad1d52465a49189c6e4c1a5673.sample::
