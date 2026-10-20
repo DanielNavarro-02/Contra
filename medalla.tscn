@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b8u35evxgmgqk"]
+
+[ext_resource type="Texture2D" uid="uid://bypukb3ks2mep" path="res://assets/medalla.png" id="1"]
+[ext_resource type="Script" uid="uid://di3sgfpddtgw5" path="res://medalla.gd" id="1_30xxu"]
+
+[sub_resource type="CircleShape2D" id="Forma"]
+radius = 14.0
+
+[node name="Medalla" type="Area2D" unique_id=860181500 groups=["medallas"]]
+script = ExtResource("1_30xxu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=425590362]
+texture = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1480414472]
+shape = SubResource("Forma")

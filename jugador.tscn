@@ -1,11 +1,9 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://cn8rcgsxal6dc"]
 
-[ext_resource type="Script" path="res://jugador.gd" id="s"]
-[ext_resource type="Texture2D" path="res://assets/bill_hoja.png" id="t0"]
-
-[sub_resource type="AtlasTexture" id="A0_0"]
-atlas = ExtResource("t0")
-region = Rect2(0, 0, 64, 64)
+[ext_resource type="AudioStream" uid="uid://52tmjlqkhnt4" path="res://assets/disparo.wav" id="a0"]
+[ext_resource type="AudioStream" uid="uid://brwcjwuyf42m" path="res://assets/muerte.wav" id="a1"]
+[ext_resource type="Script" uid="uid://spopmxxe7y8w" path="res://jugador.gd" id="s"]
+[ext_resource type="Texture2D" uid="uid://cc14rx8xvb4ja" path="res://assets/bill_hoja.png" id="t0"]
 
 [sub_resource type="AtlasTexture" id="A0_1"]
 atlas = ExtResource("t0")
@@ -22,6 +20,34 @@ region = Rect2(192, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="A0_4"]
 atlas = ExtResource("t0")
 region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_9"]
+atlas = ExtResource("t0")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_10"]
+atlas = ExtResource("t0")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_11"]
+atlas = ExtResource("t0")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_12"]
+atlas = ExtResource("t0")
+region = Rect2(768, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_13"]
+atlas = ExtResource("t0")
+region = Rect2(832, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_14"]
+atlas = ExtResource("t0")
+region = Rect2(896, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="A0_0"]
+atlas = ExtResource("t0")
+region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="A0_5"]
 atlas = ExtResource("t0")
@@ -43,14 +69,6 @@ region = Rect2(512, 0, 64, 64)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("A0_0")
-}],
-"loop": false,
-"name": &"quieto",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("A0_1")
 }, {
 "duration": 1.0,
@@ -62,9 +80,40 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("A0_4")
 }],
-"loop": true,
+"loop": 1,
 "name": &"correr",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A0_9")
+}, {
+"duration": 1.0,
+"texture": SubResource("A0_10")
+}, {
+"duration": 1.0,
+"texture": SubResource("A0_11")
+}, {
+"duration": 1.0,
+"texture": SubResource("A0_12")
+}, {
+"duration": 1.0,
+"texture": SubResource("A0_13")
+}, {
+"duration": 1.0,
+"texture": SubResource("A0_14")
+}],
+"loop": 0,
+"name": &"morir",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("A0_0")
+}],
+"loop": 0,
+"name": &"quieto",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -79,7 +128,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("A0_8")
 }],
-"loop": true,
+"loop": 1,
 "name": &"saltar",
 "speed": 12.0
 }]
@@ -87,18 +136,23 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="Forma"]
 size = Vector2(24, 60)
 
-
-[node name="Bill" type="CharacterBody2D"]
+[node name="Bill" type="CharacterBody2D" unique_id=1042762699 groups=["Bill"]]
 script = ExtResource("s")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824496197]
 sprite_frames = SubResource("SpriteFrames_A0")
 animation = &"quieto"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="Disparo" type="AudioStreamPlayer2D" parent="." unique_id=247765846]
+stream = ExtResource("a0")
+
+[node name="Muerte" type="AudioStreamPlayer" parent="." unique_id=1780002555]
+stream = ExtResource("a1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720048596]
 shape = SubResource("Forma")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1610607435]
 
-[node name="Canon" type="Marker2D" parent="."]
+[node name="Canon" type="Marker2D" parent="." unique_id=1995196418]
 position = Vector2(28, -6)
