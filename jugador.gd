@@ -1,10 +1,10 @@
 extends CharacterBody2D
 # Solución del Taller 3 (solo profesor).
 
-@export var speed = 180.0      # px/s
+@export var speed = 60.0      # px/s
 @export var gravedad = 980.0   # px/s²
-@export var salto = 600.0      # px/s hacia arriba
-@export var cadencia = 0.15    # segundos entre disparos
+@export var salto = 300.0      # px/s hacia arriba
+@export var cadencia = 0.10   # segundos entre disparos
 
 var mirando = 1                # 1 derecha, -1 izquierda
 var espera = 0.0

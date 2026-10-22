@@ -1,21 +1,37 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792471009
-barrera.gd::GDScript::3770682786173412041::1792457020::0::1::::<>Area2D<><>0<>0<><>::
-barrera.tscn::PackedScene::1281045881008159336::1792459193::0::1::::<><><>0<>0<><>::uid://bb6f2h6brxh65::::res://assets/barrera.png<>uid://btysuhls3uwtl::::res://barrera.gd
+::res://::1792645896
+barrera.gd::GDScript::3770682786173412041::1792473432::0::1::::<>Area2D<><>0<>0<><>::
+barrera.tscn::PackedScene::1281045881008159336::1792473439::0::1::::<><><>0<>0<><>::uid://bb6f2h6brxh65::::res://assets/barrera.png<>uid://btysuhls3uwtl::::res://barrera.gd
 bloques.gd::GDScript::3873663876101403651::1791838158::0::1::::<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::5056439061424976303::1791838158::1792453597::1::::<><><>0<>0<>f74bc5950585f571f070ca5e043feec8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-jugador.gd::GDScript::1295242343465133496::1792454112::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.gd::GDScript::1295242343465133496::1792474053::0::1::::<>CharacterBody2D<><>0<>0<><>::
 jugador.tscn::PackedScene::5754456905021498780::1792456175::0::1::::<><><>0<>0<><>::uid://52tmjlqkhnt4::::res://assets/disparo.wav<>uid://brwcjwuyf42m::::res://assets/muerte.wav<>uid://spopmxxe7y8w::::res://jugador.gd<>uid://cc14rx8xvb4ja::::res://assets/bill_hoja.png
 LEEME.txt::TextFile::-1::1791838158::0::1::::<><><>0<>0<><>::
-medalla.gd::GDScript::7779679283860348426::1792456509::0::1::::<>Area2D<><>0<>0<><>::
+medalla.gd::GDScript::7779679283860348426::1792473316::0::1::::<>Area2D<><>0<>0<><>::
 medalla.tscn::PackedScene::4745693972031778338::1792456509::0::1::::<><><>0<>0<><>::uid://bypukb3ks2mep::::res://assets/medalla.png<>uid://di3sgfpddtgw5::::res://medalla.gd
-mundo.gd::GDScript::2579066035359253368::1791838158::0::1::::<>Node2D<><>0<>0<><>::
-mundo.tscn::PackedScene::7363128995590354469::1792457021::0::1::::<><><>0<>0<><>::uid://bc0k3t7wdpq3y::::res://mundo.gd<>uid://cn8rcgsxal6dc::::res://jugador.tscn
+mundo.gd::GDScript::2579066035359253368::1792475206::0::1::::<>Node2D<><>0<>0<><>::
+mundo.tscn::PackedScene::7363128995590354469::1792475206::0::1::::<><><>0<>0<><>::uid://bc0k3t7wdpq3y::::res://mundo.gd<>uid://cn8rcgsxal6dc::::res://jugador.tscn
 soldado.tscn::PackedScene::4387777789690446501::1792455709::0::1::::<><><>0<>0<><>::uid://dm4juyv56i4yt::::res://assets/soldado.png
-::res://assets/::1792453597
+::res://assets/::1792476038
+assets.txt::TextFile::-1::1792476038::0::1::::<><><>0<>0<><>::
 barrera.png::CompressedTexture2D::2520957454727705216::1791838158::1792453597::1::::<><><>0<>0<>142b40c769a0dbdf64b6c664b82c412a<>res://.godot/imported/barrera.png-5ea28e4ef083dab3f539175d60279333.ctex::
 bill_hoja.png::CompressedTexture2D::4968685287643181726::1791838158::1792453597::1::::<><><>0<>0<>479c1b49611f31db3697610d526500be<>res://.godot/imported/bill_hoja.png-cd20af58397aa4ebf4e43a7d7e3c0e30.ctex::
 disparo.wav::AudioStreamWAV::2162579051333627887::1791838158::1792453597::1::::<><><>0<>0<>58bd3aafad57cacee90073e3b36d1a62<>res://.godot/imported/disparo.wav-2b692ede530592041ae23c19e4690a84.sample::
 medalla.png::CompressedTexture2D::4103150891368510463::1791838158::1792453597::1::::<><><>0<>0<>74a2a66d7588078c65eee9a8a4e1d09f<>res://.godot/imported/medalla.png-95f8750a96f028c31df993c86142bf02.ctex::
 muerte.wav::AudioStreamWAV::106623118522580542::1791838158::1792453597::1::::<><><>0<>0<>0884aeb442196137143ddbc63436c529<>res://.godot/imported/muerte.wav-c2c2e9ad1d52465a49189c6e4c1a5673.sample::
 soldado.png::CompressedTexture2D::8061978592822555495::1791838158::1792453597::1::::<><><>0<>0<>2724dcf9272b9faa3fccc91b2af3a4d4<>res://.godot/imported/soldado.png-b864a5375fbd2d7b3a98ac8ac0b5cbc0.ctex::
+::res://assets/Sprites/::1792476070
+NES - Contra - Enemies & Bosses - Defense Wall.png::CompressedTexture2D::3563858061078896410::1792476038::1792476069::1::::<><><>0<>0<>6ab33609efe6b057acc8a543c7eaddf5<>res://.godot/imported/NES - Contra - Enemies & Bosses - Defense Wall.png-bf751a039ca7f8afcbf9f21a1f269a92.ctex::
+NES - Contra - Enemies & Bosses - Dogra.png::CompressedTexture2D::4138123528986363485::1792476038::1792476069::1::::<><><>0<>0<>133d14e90d40ac15109389b233668f10<>res://.godot/imported/NES - Contra - Enemies & Bosses - Dogra.png-d6d39ec5b447626298e0afa38394917d.ctex::
+NES - Contra - Enemies & Bosses - Enemies & Obstacles.png::CompressedTexture2D::2516723825860653072::1792476038::1792476069::1::::<><><>0<>0<>5577ec588803e78ac657f65bd8e28973<>res://.godot/imported/NES - Contra - Enemies & Bosses - Enemies & Obstacles.png-6bf1d64f1e87d86dba3b9ea11074ec53.ctex::
+NES - Contra - Enemies & Bosses - Final Gate.png::CompressedTexture2D::2032809068058709072::1792476038::1792476069::1::::<><><>0<>0<>5c34024b22bcd12b0ce75aef17843704<>res://.godot/imported/NES - Contra - Enemies & Bosses - Final Gate.png-146980369d04e96d384e2d870e9aa34f.ctex::
+NES - Contra - Enemies & Bosses - Gomeramos King.png::CompressedTexture2D::5632643946317769449::1792476038::1792476069::1::::<><><>0<>0<>91aa9dc35ee3c6249aa4ca41d79a1fb9<>res://.godot/imported/NES - Contra - Enemies & Bosses - Gomeramos King.png-64882c51b4926d37b03fb70ec773a7ea.ctex::
+NES - Contra - Enemies & Bosses - Gromaides.png::CompressedTexture2D::2291704799942185549::1792476038::1792476069::1::::<><><>0<>0<>5062a84f9207c9b17716454ec6906739<>res://.godot/imported/NES - Contra - Enemies & Bosses - Gromaides.png-b091de5fa8416dd27b66722eb6253497.ctex::
+NES - Contra - Enemies & Bosses - Guldaf.png::CompressedTexture2D::2142479400001012844::1792476038::1792476069::1::::<><><>0<>0<>672102d29822303eec5dee9eac5e6f08<>res://.godot/imported/NES - Contra - Enemies & Bosses - Guldaf.png-918f6c435833b829ee4685955323d121.ctex::
+NES - Contra - Enemies & Bosses - Java.png::CompressedTexture2D::5981500883406217158::1792476038::1792476069::1::::<><><>0<>0<>c56f970983eefbdb2e34775b3ba68a4a<>res://.godot/imported/NES - Contra - Enemies & Bosses - Java.png-aee3515004ff7a94999386ba3b0a2c62.ctex::
+NES - Contra - Enemies & Bosses - Turrets.png::CompressedTexture2D::3845889961638745711::1792476038::1792476069::1::::<><><>0<>0<>8a9b4b98f167fd47d2be53118214a988<>res://.godot/imported/NES - Contra - Enemies & Bosses - Turrets.png-8554a76c7393f5e68ba70d36ee0cbf74.ctex::
+NES - Contra - Miscellaneous - Title Screens.png::CompressedTexture2D::4132914073589682711::1792476038::1792476069::1::::<><><>0<>0<>6be456eb5148e8a74ee51f4090e9a18c<>res://.godot/imported/NES - Contra - Miscellaneous - Title Screens.png-1bd53329d4bfba4a3b9e0e648698e37d.ctex::
+NES - Contra - Miscellaneous - Weapon Pickups.png::CompressedTexture2D::5312436400037667938::1792476038::1792476069::1::::<><><>0<>0<>735640909125e6a2a12e67695493d6c5<>res://.godot/imported/NES - Contra - Miscellaneous - Weapon Pickups.png-59f61f3686b142c7d312f94eb1b2ab2d.ctex::
+NES - Contra - Playable Characters - Bill & Lance.png::CompressedTexture2D::8298082176941851693::1792476038::1792476070::1::::<><><>0<>0<>62aeff92a692e5b03059d6716ccc03a9<>res://.godot/imported/NES - Contra - Playable Characters - Bill & Lance.png-ef6777a35800a6e4e665e41e47ff5402.ctex::
+NES - Contra - Stages - Stage 1.png::CompressedTexture2D::3105619464938667179::1792476038::1792476069::1::::<><><>0<>0<>f65091ee0bf60823de738ea8849e3781<>res://.godot/imported/NES - Contra - Stages - Stage 1.png-9deb80deb7c3c7e7cc1a55e82f74cffd.ctex::
+NES - Contra - Tilesets - Stage 1.png::CompressedTexture2D::8655922520325226724::1792476038::1792476069::1::::<><><>0<>0<>8433375788b18a3ed9202469682d65df<>res://.godot/imported/NES - Contra - Tilesets - Stage 1.png-9740da6ec76874d242cf713fb07ee1a9.ctex::

@@ -137,6 +137,7 @@ animations = [{
 size = Vector2(24, 60)
 
 [node name="Bill" type="CharacterBody2D" unique_id=1042762699 groups=["Bill"]]
+scale = Vector2(0.4, 0.4)
 script = ExtResource("s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824496197]
@@ -153,6 +154,8 @@ stream = ExtResource("a1")
 shape = SubResource("Forma")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1610607435]
+position = Vector2(242.5, 1.9073486e-06)
+zoom = Vector2(3.5, 3.5)
 
 [node name="Canon" type="Marker2D" parent="." unique_id=1995196418]
 position = Vector2(28, -6)

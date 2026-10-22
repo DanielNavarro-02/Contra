@@ -6,16 +6,12 @@ var modo_poder = false
 # "#" bloque, "." medalla, "o" barrera, "E" soldado.
 
 const MAPA = [
-	"                                        ",
-	"                                        ",
-	"                                        ",
-	"                                        ",
-	"             .           .              ",
-	"       .            .         o         ",
-	"    o                                   ",
-	"#     .      #    E      #   .    E    #",
-	"#        .   #     #     #        .    #",
-	"########################################",
+	"             .           .                                                      ",
+	"       .            .         o                                                 ",
+	"    o                                                                           ",
+	"      .           E          .    E                                             ",
+	"         .                                                                      ",
+	"                                                                                ",
 ]
 
 var medalla_escena = preload("res://medalla.tscn")
@@ -32,7 +28,9 @@ func _ready():
 
 
 func construir():
-	construir_bloques(MAPA, Color(0.45, 0.35, 0.2, 1))
+	# COMENTADO O ELIMINADO: Ya no generamos bloques por código
+	# construir_bloques(MAPA, Color(0.45, 0.35, 0.2, 1))
+	
 	for fila in MAPA.size():
 		for col in MAPA[fila].length():
 			var escena = null
@@ -43,10 +41,15 @@ func construir():
 					escena = barrera_escena
 				"E":
 					escena = soldado_escena
+			
 			if escena:
 				var nodo = escena.instantiate()
-				nodo.position = Vector2(col + 0.5, fila + 0.5) * CELDA
-				$Mapa.add_child(nodo)
+				# Mantenemos el cálculo de posición original basado en el tamaño de tu CELDA (16x16)
+				nodo.position = Vector2(col + 0.5, fila + 0.5) * 4
+				
+				# ¡IMPORTANTE!: Asegúrate de que este nodo de destino sea tu nuevo TileMapLayer o un Node2D simple
+				$mapa.add_child(nodo)
+
 				
 func _on_recogido(valor, da_poder):
 	# Sumamos el valor de la medalla recogida al puntaje actual

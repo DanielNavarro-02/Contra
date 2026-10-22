@@ -6,6 +6,7 @@
 size = Vector2(24, 56)
 
 [node name="Soldado" type="Area2D" unique_id=1775744743 groups=["enemigos"]]
+scale = Vector2(0.4, 0.4)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=542932584]
 texture = ExtResource("1")

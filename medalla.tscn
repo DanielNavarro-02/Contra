@@ -7,6 +7,7 @@
 radius = 14.0
 
 [node name="Medalla" type="Area2D" unique_id=860181500 groups=["medallas"]]
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_30xxu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=425590362]
