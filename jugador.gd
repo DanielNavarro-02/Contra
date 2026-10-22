@@ -1,6 +1,7 @@
 extends CharacterBody2D
 # Solución del Taller 3 (solo profesor).
 
+@export var vida_maxima = 5
 @export var speed = 180.0      # px/s
 @export var gravedad = 980.0   # px/s²
 @export var salto = 600.0      # px/s hacia arriba
@@ -10,6 +11,8 @@ var mirando = 1                # 1 derecha, -1 izquierda
 var espera = 0.0
 var inicio = Vector2.ZERO
 var muriendo = false
+var bala = preload("res://bala.tscn")
+var vida = 0
 
 @onready var sprite = $AnimatedSprite2D
 @onready var canon = $Canon    # por aquí salen las balas
@@ -18,6 +21,7 @@ var muriendo = false
 
 
 func _ready():
+	vida = vida_maxima
 	inicio = position
 
 
@@ -69,8 +73,21 @@ func orientar():
 
 
 func disparar():
+	var newbala = bala.instantiate()
+	newbala.direction = 0.0 if mirando > 0 else PI
+	newbala.global_position = $Canon.global_position
+	get_parent().add_child(newbala)
 	sonido_disparo.play()   # cada disparo es un sonido nuevo: aquí sí se reinicia
 
+func _recibir_daño(cantidad: int = 1):
+	if muriendo:
+		return
+		
+	vida -= cantidad
+	print("Jugador vida: ", vida)
+	
+	if vida <= 0:
+		morir()
 
 # Nivel 3
 func morir():
