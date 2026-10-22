@@ -7,9 +7,9 @@ var modo_poder = false
 
 const MAPA = [
 	"             .           .                                                      ",
-	"       .            .         o                                                 ",
-	"    o                                                                           ",
-	"      .           E          .    E                                             ",
+	"       .          E  .         o E                                                ",
+	"    o                                                                            ",
+	"      .                    .                                                 ",
 	"         .                                                                      ",
 	"                                                                                ",
 ]

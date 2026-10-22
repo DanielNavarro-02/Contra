@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3rqcamgxi4b6"]
 
-[ext_resource type="Texture2D" uid="uid://dm4juyv56i4yt" path="res://assets/soldado.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://uyrvka3wdwbr" path="res://assets/Sprites/soldado.png" id="1_gm1nk"]
 
 [sub_resource type="RectangleShape2D" id="Forma"]
 size = Vector2(24, 56)
@@ -9,7 +9,8 @@ size = Vector2(24, 56)
 scale = Vector2(0.4, 0.4)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=542932584]
-texture = ExtResource("1")
+scale = Vector2(2, 2)
+texture = ExtResource("1_gm1nk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1882970813]
 shape = SubResource("Forma")
