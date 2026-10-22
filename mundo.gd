@@ -6,12 +6,12 @@ var modo_poder = false
 # "#" bloque, "." medalla, "o" barrera, "E" soldado.
 
 const MAPA = [
-	"             .           .                                                      ",
-	"       .          E  .         o E                                                ",
-	"    o                                                                            ",
-	"      .                    .                                                 ",
-	"         .                                                                      ",
-	"                                                                                ",
+	".           .",
+	"    .     E .   o E",
+	"  o              ",
+	"     .         . ",
+	"        .        ",
+	"                 ",
 ]
 
 var medalla_escena = preload("res://medalla.tscn")
@@ -45,7 +45,7 @@ func construir():
 			if escena:
 				var nodo = escena.instantiate()
 				# Mantenemos el cálculo de posición original basado en el tamaño de tu CELDA (16x16)
-				nodo.position = Vector2(col + 0.5, fila + 0.5) * 4
+				nodo.position = Vector2(col + 0.5, fila + 0.5) * CELDA
 				
 				# ¡IMPORTANTE!: Asegúrate de que este nodo de destino sea tu nuevo TileMapLayer o un Node2D simple
 				$mapa.add_child(nodo)
