@@ -1,9 +1,4 @@
-res://mapa.tscn
-res://mundo.tscn
 res://mundo.gd
-res://bloques.gd
+res://mundo.tscn
+res://mapa.tscn
 res://jugador.tscn
-res://soldado.tscn
-res://medalla.tscn
-res://barrera.tscn
-res://jugador.gd

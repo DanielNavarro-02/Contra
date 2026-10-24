@@ -1,17 +1,12 @@
 extends "res://bloques.gd"
 
+
 var puntaje = 0
 var modo_poder = false
 # Base del Taller 4. construir() arma el nivel a partir del MAPA:
 # "#" bloque, "." medalla, "o" barrera, "E" soldado.
 
 const MAPA = [
-	".           .",
-	"    .     E .   o E",
-	"  o              ",
-	"     .         . ",
-	"        .        ",
-	"                 ",
 ]
 
 var medalla_escena = preload("res://medalla.tscn")
@@ -20,11 +15,11 @@ var soldado_escena = preload("res://soldado.tscn")
 
 
 func _ready():
-	construir()
 	# Buscamos los nodos en el grupo "medallas"
 	for item in get_tree().get_nodes_in_group("medallas"): 
-		# Conectamos la señal de cada medalla a la función local
-		item.recogido.connect(_on_recogido)
+		if item.has_signal("recogido"):
+			# Conectamos la señal de cada medalla a la función local
+			item.recogido.connect(_on_recogido)
 
 
 func construir():
@@ -72,3 +67,9 @@ func activar_poder():
 	modo_poder = false
 	print("poder: no")
 				
+
+
+func _on_zona_agua_body_entered(body: Node2D) -> void:
+	# Si tu nodo jugador se llama "Bill", esto funcionará de inmediato
+	if body.name == "Bill":
+		body.morir()

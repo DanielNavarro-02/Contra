@@ -3,6 +3,12 @@
 [ext_resource type="Script" uid="uid://bc0k3t7wdpq3y" path="res://mundo.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://cn8rcgsxal6dc" path="res://jugador.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://b2mmgyq4deonm" path="res://mapa.tscn" id="3_fw4w5"]
+[ext_resource type="PackedScene" uid="uid://b3rqcamgxi4b6" path="res://soldado.tscn" id="4_otwa2"]
+[ext_resource type="PackedScene" uid="uid://b8u35evxgmgqk" path="res://medalla.tscn" id="5_aou4a"]
+[ext_resource type="PackedScene" uid="uid://sisvydquucng" path="res://barrera.tscn" id="6_5ckkb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(1413, 18)
 
 [node name="Mundo" type="Node2D" unique_id=907784951]
 script = ExtResource("1")
@@ -29,3 +35,50 @@ theme_override_font_sizes/font_size = 36
 
 [node name="Bill" parent="." unique_id=1534901002 instance=ExtResource("2")]
 position = Vector2(71, 66)
+
+[node name="Soldado" parent="." unique_id=1775744743 instance=ExtResource("4_otwa2")]
+position = Vector2(269, 82)
+
+[node name="Medalla" parent="." unique_id=860181500 instance=ExtResource("5_aou4a")]
+position = Vector2(119, 70)
+
+[node name="Medalla2" parent="." unique_id=341956742 instance=ExtResource("5_aou4a")]
+position = Vector2(316, 180)
+
+[node name="Medalla3" parent="." unique_id=484003069 instance=ExtResource("5_aou4a")]
+position = Vector2(217, 51)
+
+[node name="Medalla4" parent="." unique_id=830080115 instance=ExtResource("5_aou4a")]
+position = Vector2(339, 61)
+
+[node name="Medalla5" parent="." unique_id=1186077291 instance=ExtResource("5_aou4a")]
+position = Vector2(511, 45)
+
+[node name="Medalla6" parent="." unique_id=455864476 instance=ExtResource("5_aou4a")]
+position = Vector2(622, 167)
+
+[node name="Medalla7" parent="." unique_id=417349722 instance=ExtResource("5_aou4a")]
+position = Vector2(740, 45)
+
+[node name="Medalla8" parent="." unique_id=817127323 instance=ExtResource("5_aou4a")]
+position = Vector2(1020, 39)
+
+[node name="Barrera" parent="." unique_id=1665307009 instance=ExtResource("6_5ckkb")]
+position = Vector2(930, 43)
+
+[node name="Barrera2" parent="." unique_id=245393911 instance=ExtResource("6_5ckkb")]
+position = Vector2(630, 27)
+
+[node name="Soldado2" parent="." unique_id=1620588951 instance=ExtResource("4_otwa2")]
+position = Vector2(317, 194)
+
+[node name="Soldado3" parent="." unique_id=634205673 instance=ExtResource("4_otwa2")]
+position = Vector2(742, 85)
+
+[node name="ZonaAgua" type="Area2D" parent="." unique_id=1345357042]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaAgua" unique_id=1671461192]
+position = Vector2(524.5, 232)
+shape = SubResource("RectangleShape2D_4kxuq")
+
+[connection signal="body_entered" from="ZonaAgua" to="." method="_on_zona_agua_body_entered"]

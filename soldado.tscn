@@ -1,16 +1,22 @@
 [gd_scene format=3 uid="uid://b3rqcamgxi4b6"]
 
-[ext_resource type="Texture2D" uid="uid://uyrvka3wdwbr" path="res://assets/Sprites/soldado.png" id="1_gm1nk"]
+[ext_resource type="Script" uid="uid://bir13k16rh5y1" path="res://soldado.gd" id="1_thcy5"]
+[ext_resource type="Texture2D" uid="uid://uyrvka3wdwbr" path="res://assets/Sprites/soldado.png" id="2_thcy5"]
 
 [sub_resource type="RectangleShape2D" id="Forma"]
-size = Vector2(24, 56)
+size = Vector2(24, 32)
 
-[node name="Soldado" type="Area2D" unique_id=1775744743 groups=["enemigos"]]
-scale = Vector2(0.4, 0.4)
+[node name="Soldado" type="CharacterBody2D" unique_id=1620588951 groups=["enemigos"]]
+scale = Vector2(0.8, 0.8)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_thcy5")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=542932584]
-scale = Vector2(2, 2)
-texture = ExtResource("1_gm1nk")
+texture = ExtResource("2_thcy5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1882970813]
 shape = SubResource("Forma")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=2111016929]
+position = Vector2(-11, -10)

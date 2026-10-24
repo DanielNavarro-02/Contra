@@ -7,7 +7,6 @@
 radius = 16.0
 
 [node name="Barrera" type="Area2D" unique_id=1665307009 groups=["medallas"]]
-scale = Vector2(0.4, 0.4)
 script = ExtResource("1_x4x2i")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1237954176]

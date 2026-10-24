@@ -131,17 +131,17 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="Forma"]
-size = Vector2(29.166664, 60)
+size = Vector2(29.166664, 57.083344)
 
 [node name="Bill" type="CharacterBody2D" unique_id=1042762699 groups=["Bill"]]
-position = Vector2(0, 1.9999999)
 scale = Vector2(0.8, 0.8)
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("s")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824496197]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=824496197 groups=["Bill"]]
 sprite_frames = SubResource("SpriteFrames_A0")
-animation = &"saltar"
-frame_progress = 0.07517527
+animation = &"quieto"
 
 [node name="Disparo" type="AudioStreamPlayer2D" parent="." unique_id=247765846]
 stream = ExtResource("a0")
@@ -150,8 +150,8 @@ stream = ExtResource("a0")
 stream = ExtResource("a1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1720048596]
-position = Vector2(-7.450579e-08, -1.2499992)
-scale = Vector2(0.5999999, 0.5999999)
+position = Vector2(-7.450576e-08, -0.3750012)
+scale = Vector2(0.5999998, 0.5999998)
 shape = SubResource("Forma")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1610607435]
@@ -159,4 +159,4 @@ position = Vector2(104, 0)
 zoom = Vector2(3.5, 3.5)
 
 [node name="Canon" type="Marker2D" parent="." unique_id=1995196418]
-position = Vector2(28, -6)
+position = Vector2(10.000002, -6.2499995)

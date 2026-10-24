@@ -1,18 +1,21 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1792655598
-barrera.gd::GDScript::3770682786173412041::1792473432::0::1::::<>Area2D<><>0<>0<><>::
-barrera.tscn::PackedScene::1281045881008159336::1792654525::0::1::::<><><>0<>0<><>::uid://btysuhls3uwtl::::res://barrera.gd<>uid://drjfeu88pripk::::res://assets/Sprites/barrera.png
+::res://::1792874772
+bala.gd::GDScript::5685324914872839879::1792812924::0::1::::<>Area2D<><>0<>0<><>::
+bala.tscn::PackedScene::954905769022532694::1792806161::0::1::::<><><>0<>0<><>::uid://bb23oj5uf6mhh::::res://assets/Sprites/sprite_21.png<>uid://cnaaqae33xgqx::::res://bala.gd
+barrera.gd::GDScript::3770682786173412041::1792805614::0::1::::<>Area2D<><>0<>0<><>::
+barrera.tscn::PackedScene::1281045881008159336::1792805613::0::1::::<><><>0<>0<><>::uid://btysuhls3uwtl::::res://barrera.gd<>uid://drjfeu88pripk::::res://assets/Sprites/barrera.png
 bloques.gd::GDScript::226073406128628270::1792651251::0::1::::<>Node2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::5056439061424976303::1791838158::1792453597::1::::<><><>0<>0<>f74bc5950585f571f070ca5e043feec8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-jugador.gd::GDScript::1295242343465133496::1792652718::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jugador.tscn::PackedScene::5754456905021498780::1792655598::0::1::::<><><>0<>0<><>::uid://bwueh66c24b1x::::res://assets/Sprites/corre2.png<>uid://cunod0gw4coga::::res://assets/Sprites/correr1.png<>uid://dur0fyendjbtq::::res://assets/Sprites/correr3.png<>uid://bfl5dfl581tap::::res://assets/Sprites/correr4.png<>uid://bfkg3s4jic4ti::::res://assets/Sprites/correr5.png<>uid://y8ry24w6b8nj::::res://assets/Sprites/saltar1.png<>uid://bw7lf0dvkm74i::::res://assets/Sprites/saltar2.png<>uid://52tmjlqkhnt4::::res://assets/disparo.wav<>uid://brwcjwuyf42m::::res://assets/muerte.wav<>uid://spopmxxe7y8w::::res://jugador.gd<>uid://cc14rx8xvb4ja::::res://assets/bill_hoja.png
+jugador.gd::GDScript::1295242343465133496::1792817265::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.tscn::PackedScene::5754456905021498780::1792815487::0::1::::<><><>0<>0<><>::uid://bwueh66c24b1x::::res://assets/Sprites/corre2.png<>uid://cunod0gw4coga::::res://assets/Sprites/correr1.png<>uid://dur0fyendjbtq::::res://assets/Sprites/correr3.png<>uid://bfl5dfl581tap::::res://assets/Sprites/correr4.png<>uid://bfkg3s4jic4ti::::res://assets/Sprites/correr5.png<>uid://c0oj1t2fadqpi::::res://assets/Sprites/morir1.png<>uid://dwvi308dlv8nv::::res://assets/Sprites/morir2.png<>uid://y8ry24w6b8nj::::res://assets/Sprites/saltar1.png<>uid://jnf71c0fsu06::::res://assets/Sprites/morir3.png<>uid://bw7lf0dvkm74i::::res://assets/Sprites/saltar2.png<>uid://dn4nd5yudtfr3::::res://assets/Sprites/saltar3.png<>uid://88v2niirkkiv::::res://assets/Sprites/saltar4.png<>uid://52tmjlqkhnt4::::res://assets/disparo.wav<>uid://brwcjwuyf42m::::res://assets/muerte.wav<>uid://spopmxxe7y8w::::res://jugador.gd
 LEEME.txt::TextFile::-1::1791838158::0::1::::<><><>0<>0<><>::
+mapa.tscn::PackedScene::4307032600244403950::1792817265::0::1::::<><><>0<>0<><>::uid://dvk81q3gcksdg::::res://assets/Sprites/NES - Contra - Tilesets - Stage 1.png
 medalla.gd::GDScript::7779679283860348426::1792473316::0::1::::<>Area2D<><>0<>0<><>::
-medalla.tscn::PackedScene::4745693972031778338::1792654498::0::1::::<><><>0<>0<><>::uid://di3sgfpddtgw5::::res://medalla.gd<>uid://c5y6calfo1l2i::::res://assets/Sprites/medalla.png
-mundo.gd::GDScript::2579066035359253368::1792654678::0::1::::<>Node2D<><>0<>0<><>::
-mundo.tscn::PackedScene::7363128995590354469::1792651422::0::1::::<><><>0<>0<><>::uid://bc0k3t7wdpq3y::::res://mundo.gd<>uid://cn8rcgsxal6dc::::res://jugador.tscn<>uid://b2mmgyq4deonm::::res://mapa.tscn
-mapa.tscn::PackedScene::4307032600244403950::1792655395::0::1::::<><><>0<>0<><>::uid://dvk81q3gcksdg::::res://assets/Sprites/NES - Contra - Tilesets - Stage 1.png
-soldado.tscn::PackedScene::4387777789690446501::1792654639::0::1::::<><><>0<>0<><>::uid://uyrvka3wdwbr::::res://assets/Sprites/soldado.png
+medalla.tscn::PackedScene::4745693972031778338::1792794333::0::1::::<><><>0<>0<><>::uid://di3sgfpddtgw5::::res://medalla.gd<>uid://c5y6calfo1l2i::::res://assets/Sprites/medalla.png
+mundo.gd::GDScript::2579066035359253368::1792796993::0::1::::<>Node2D<><>0<>0<><>::
+mundo.tscn::PackedScene::7363128995590354469::1792798645::0::1::::<><><>0<>0<><>::uid://bc0k3t7wdpq3y::::res://mundo.gd<>uid://cn8rcgsxal6dc::::res://jugador.tscn<>uid://b2mmgyq4deonm::::res://mapa.tscn<>uid://b3rqcamgxi4b6::::res://soldado.tscn<>uid://b8u35evxgmgqk::::res://medalla.tscn<>uid://sisvydquucng::::res://barrera.tscn
+soldado.gd::GDScript::2984655065487584234::1792806161::0::1::::<>CharacterBody2D<><>0<>0<><>::
+soldado.tscn::PackedScene::4387777789690446501::1792805172::0::1::::<><><>0<>0<><>::uid://bir13k16rh5y1::::res://soldado.gd<>uid://uyrvka3wdwbr::::res://assets/Sprites/soldado.png
 ::res://assets/::1792476038
 assets.txt::TextFile::-1::1792476038::0::1::::<><><>0<>0<><>::
 barrera.png::CompressedTexture2D::2520957454727705216::1791838158::1792453597::1::::<><><>0<>0<>142b40c769a0dbdf64b6c664b82c412a<>res://.godot/imported/barrera.png-5ea28e4ef083dab3f539175d60279333.ctex::
@@ -21,7 +24,7 @@ disparo.wav::AudioStreamWAV::2162579051333627887::1791838158::1792453597::1::::<
 medalla.png::CompressedTexture2D::4103150891368510463::1791838158::1792453597::1::::<><><>0<>0<>74a2a66d7588078c65eee9a8a4e1d09f<>res://.godot/imported/medalla.png-95f8750a96f028c31df993c86142bf02.ctex::
 muerte.wav::AudioStreamWAV::106623118522580542::1791838158::1792453597::1::::<><><>0<>0<>0884aeb442196137143ddbc63436c529<>res://.godot/imported/muerte.wav-c2c2e9ad1d52465a49189c6e4c1a5673.sample::
 soldado.png::CompressedTexture2D::8061978592822555495::1791838158::1792453597::1::::<><><>0<>0<>2724dcf9272b9faa3fccc91b2af3a4d4<>res://.godot/imported/soldado.png-b864a5375fbd2d7b3a98ac8ac0b5cbc0.ctex::
-::res://assets/Sprites/::1792656086
+::res://assets/Sprites/::1792874709
 barrera.png::CompressedTexture2D::8371363623817484160::1792654400::1792654422::1::::<><><>0<>0<>f10cbd9ee7261c7bc41de8c2a07f1e52<>res://.godot/imported/barrera.png-22e8cd5cc1ab5066e1e0ac028ff0b4f4.ctex::
 corre2.png::CompressedTexture2D::3972119843580294311::1792654790::1792654876::1::::<><><>0<>0<>bcc52bd26adc58c09ee093f632ea3469<>res://.godot/imported/corre2.png-bd2d6f57f0aefd04bf64de27fc6a79ad.ctex::
 correr1.png::CompressedTexture2D::6204311869621080228::1792654783::1792654876::1::::<><><>0<>0<>953825d1f7425194e77f01fcb287e0b5<>res://.godot/imported/correr1.png-dd959daa934cde64dd469a7c99133b47.ctex::
@@ -51,3 +54,4 @@ saltar2.png::CompressedTexture2D::3997313466435865666::1792656005::1792656007::1
 saltar3.png::CompressedTexture2D::8132380265218417338::1792656047::1792656094::1::::<><><>0<>0<>9a6bcdc7fb05001d87384a34cad4dc79<>res://.godot/imported/saltar3.png-e1658f0c3c3c8a7fb372ade4a1f0f47f.ctex::
 saltar4.png::CompressedTexture2D::2385680274771162413::1792656068::1792656094::1::::<><><>0<>0<>9fbfca757b1a6c2c99b403eb442626d6<>res://.godot/imported/saltar4.png-36997cdb40ffe1e327f430b0f4c1970f.ctex::
 soldado.png::CompressedTexture2D::1454392155942351107::1792654572::1792654578::1::::<><><>0<>0<>58bd6079b9730590a149bbf1df89630f<>res://.godot/imported/soldado.png-f60ec43bc591199679d1088a7253d20f.ctex::
+sprite_21.png::CompressedTexture2D::2514073323573783405::1792594826::1792726627::1::::<><><>0<>0<>3c099ac646186b6142dde50fce66a869<>res://.godot/imported/sprite_21.png-b2c293aa51be0851150f427884722349.ctex::
