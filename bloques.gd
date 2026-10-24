@@ -2,7 +2,7 @@ extends Node2D
 # Construye los bloques del MAPA. Las filas de "#" seguidas se juntan en un solo cuerpo,
 # para que el personaje no se enganche en las uniones entre bloques.
 
-const CELDA = 64
+const CELDA = 16
 
 
 func construir_bloques(mapa: Array, color: Color):

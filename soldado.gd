@@ -42,18 +42,24 @@ func _physics_process(delta):
 func mover(delta):
 	if not is_on_floor():
 		velocity.y += gravedad * delta
+	else:
+		velocity.y = 0
+		
+		if not is_instance_valid(jugador):
+			velocity.x = 0
+			move_and_slide()
+			return
 	
 	var distancia = global_position.distance_to(jugador.global_position)
 	var direccion = sign(jugador.global_position.x - global_position.x)
 	
-	if distancia < distancia_deteccion:
-		if distancia < distancia_disparo * 0.7:
-			velocity.x = -direccion * speed
-		elif distancia <= distancia_disparo:
-			velocity.x = 0
-		else:
-			velocity.x = direccion * speed
+	if distancia > distancia_deteccion:
+		velocity.x = 0
+	elif distancia > distancia_disparo:
+		# Se acerca
+		velocity.x = direccion * speed
 	else:
+		# Distancia ideal → quieto
 		velocity.x = 0
 	
 	move_and_slide()
@@ -68,9 +74,20 @@ func orientar():
 	canon.position.x = abs(canon.position.x) * mirando
 
 func disparar():
+	if not is_instance_valid(jugador):
+		return
 	var newbala = bala.instantiate()
-	newbala.direction = 0.0 if mirando > 0 else PI
+	
+	var dir = (jugador.global_position - global_position).normalized()
+	var angulo = dir.angle()
+	var paso = PI / 4.0
+	var angulo_8 = round(angulo / paso) * paso
+	
+	newbala.direction = angulo_8
 	newbala.global_position = canon.global_position
+	
+	newbala.disparador = self
+	
 	get_parent().add_child(newbala)
 
 # ——— NUEVO: recibir daño ———
@@ -79,7 +96,7 @@ func recibir_daño(cantidad: int = 1):
 		return
 	
 	vida -= cantidad
-	print("Soldado vida: ", vida)
+	print("Jugador vida: ", vida)
 	
 	if vida <= 0:
 		morir()

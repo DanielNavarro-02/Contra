@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://sisvydquucng"]
 
-[ext_resource type="Texture2D" uid="uid://bb6f2h6brxh65" path="res://assets/barrera.png" id="1"]
 [ext_resource type="Script" uid="uid://btysuhls3uwtl" path="res://barrera.gd" id="1_x4x2i"]
+[ext_resource type="Texture2D" uid="uid://drjfeu88pripk" path="res://assets/Sprites/barrera.png" id="2_x4x2i"]
 
 [sub_resource type="CircleShape2D" id="Forma"]
 radius = 16.0
@@ -10,7 +10,7 @@ radius = 16.0
 script = ExtResource("1_x4x2i")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1237954176]
-texture = ExtResource("1")
+texture = ExtResource("2_x4x2i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=311378650]
 shape = SubResource("Forma")

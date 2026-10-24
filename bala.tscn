@@ -7,6 +7,8 @@
 radius = 4.0
 
 [node name="bala" type="Area2D" unique_id=1072579163]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_ij6vw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=111089699]

@@ -1,13 +1,27 @@
 extends Area2D
-@export var valor = 500
-@export var da_poder: bool = true
-signal recogido(valor, da_poder)
 
-# Called when the node enters the scene tree for the first time.
+@export var speed: float = 1000.0
+var direction: float = 0.0
+var disparador = null          # quién disparó la bala (jugador o soldado)
+
 func _ready():
-	body_entered.connect(_on_body_entered)
+	rotation = direction
+	# Desaparece sola a los 2 segundos si no choca
+	await get_tree().create_timer(2.0).timeout
+	queue_free()
+
+func _physics_process(delta):
+	# Mueve la bala en la dirección indicada
+	position += Vector2(speed, 0).rotated(direction) * delta
 
 func _on_body_entered(body):
-	if body.is_in_group("Bill"):
-		recogido.emit(valor, da_poder)
-		queue_free()
+	# No dañar a quien la disparó
+	if body == disparador:
+		return
+	
+	# Si el cuerpo tiene la función recibir_daño → le hace daño
+	if body.has_method("recibir_daño"):
+		body.recibir_daño(1)
+	
+	# La bala siempre desaparece al chocar
+	queue_free()

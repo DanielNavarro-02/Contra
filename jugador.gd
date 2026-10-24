@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var vida_maxima = 5
 @export var speed = 180.0      # px/s
 @export var gravedad = 980.0   # px/s²
-@export var salto = 600.0      # px/s hacia arriba
+@export var salto = 400.0      # px/s hacia arriba
 @export var cadencia = 0.15    # segundos entre disparos
 
 var mirando = 1                # 1 derecha, -1 izquierda
@@ -71,15 +71,38 @@ func orientar():
 	sprite.flip_h = mirando < 0
 	canon.position.x = 28 * mirando   # flip_h no mueve a los hijos: el cañón hay que moverlo
 
+func obtener_direccion_disparo() -> float:
+	var dir = Vector2.ZERO
+	
+	# Horizontal
+	dir.x = Input.get_axis("move_left", "move_right")
+	
+	# Vertical (tus nuevas acciones)
+	if Input.is_action_pressed("Apuntar_Arriba"):
+		dir.y = -1
+	elif Input.is_action_pressed("Apuntar_Abajo"):
+		dir.y = 1
+	
+	# Si no hay input de dirección, dispara hacia donde mira
+	if dir == Vector2.ZERO:
+		dir.x = mirando
+	
+	# Normalizamos y convertimos a ángulo
+	dir = dir.normalized()
+	return dir.angle()
 
 func disparar():
 	var newbala = bala.instantiate()
-	newbala.direction = 0.0 if mirando > 0 else PI
+	
+	# Ángulo en 8 direcciones (o libre según el input)
+	newbala.direction = obtener_direccion_disparo()
 	newbala.global_position = $Canon.global_position
+	newbala.disparador = self
+	
 	get_parent().add_child(newbala)
-	sonido_disparo.play()   # cada disparo es un sonido nuevo: aquí sí se reinicia
+	sonido_disparo.play()
 
-func _recibir_daño(cantidad: int = 1):
+func recibir_daño(cantidad: int = 1):
 	if muriendo:
 		return
 		
